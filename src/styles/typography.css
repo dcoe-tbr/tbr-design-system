@@ -1,0 +1,73 @@
+/*
+ * The Brand Report — Typography utilities
+ * Pair with tokens.css. Import Newsreader + Inter from Google Fonts (see README).
+ */
+
+/* ===== Serif titles (Newsreader Regular) ===== */
+.tbr-title-100 { font: 400 20px/1.3 var(--tbr-font-serif); letter-spacing: 0;     }
+.tbr-title-200 { font: 400 28px/1.3 var(--tbr-font-serif); letter-spacing: 0;     }
+.tbr-title-300 { font: 400 34px/1.3 var(--tbr-font-serif); letter-spacing: 0;     }
+.tbr-title-400 { font: 400 40px/1.3 var(--tbr-font-serif); letter-spacing: -1px;  }
+.tbr-title-500 { font: 400 48px/1.3 var(--tbr-font-serif); letter-spacing: -1px;  }
+
+/* ===== Serif headers (Newsreader Medium) — hero editorial voice ===== */
+.tbr-header-100 { font: 500 26px/1.4 var(--tbr-font-serif); letter-spacing: 0;     }
+.tbr-header-200 { font: 500 36px/1.4 var(--tbr-font-serif); letter-spacing: 0;     }
+.tbr-header-300 { font: 500 42px/1.4 var(--tbr-font-serif); letter-spacing: -1px;  }
+.tbr-header-400 { font: 500 58px/1.4 var(--tbr-font-serif); letter-spacing: -2px;  }
+.tbr-header-500 { font: 500 70px/1.4 var(--tbr-font-serif); letter-spacing: -2px;  }
+
+/* ===== Sans headers (Inter SemiBold) — UI/product surfaces ===== */
+.tbr-header-sans-100 { font: 600 14px/1.5  var(--tbr-font-sans); letter-spacing: 0;    }
+.tbr-header-sans-200 { font: 600 16px/1.5  var(--tbr-font-sans); letter-spacing: 0;    }
+.tbr-header-sans-300 { font: 600 18px/1.6  var(--tbr-font-sans); letter-spacing: -1px; }
+.tbr-header-sans-400 { font: 600 20px/1.55 var(--tbr-font-sans); letter-spacing: -1px; }
+.tbr-header-sans-500 { font: 600 22px/1.55 var(--tbr-font-sans); letter-spacing: -2px; }
+
+/* ===== Body (Inter) ===== */
+.tbr-body-xs          { font: 400 12px/1.5  var(--tbr-font-sans); letter-spacing: 0;    }
+.tbr-body-xs-medium   { font: 500 12px/1.4  var(--tbr-font-sans); letter-spacing: -1px; }
+.tbr-body-xs-semibold { font: 600 12px/1.4  var(--tbr-font-sans); letter-spacing: -1px; }
+
+.tbr-body-sm          { font: 400 14px/1.5  var(--tbr-font-sans); letter-spacing: 0;    }
+.tbr-body-sm-medium   { font: 500 14px/1.4  var(--tbr-font-sans); letter-spacing: -1px; }
+.tbr-body-sm-semibold { font: 600 14px/1.4  var(--tbr-font-sans); letter-spacing: -1px; }
+
+.tbr-body-md          { font: 400 16px/1.6  var(--tbr-font-sans); }
+.tbr-body-md-medium   { font: 500 16px/1.6  var(--tbr-font-sans); }
+.tbr-body-md-semibold { font: 600 16px/1.6  var(--tbr-font-sans); }
+
+.tbr-body-lg          { font: 400 18px/1.55 var(--tbr-font-sans); }
+.tbr-body-lg-medium   { font: 500 18px/1.55 var(--tbr-font-sans); }
+.tbr-body-lg-semibold { font: 600 18px/1.55 var(--tbr-font-sans); }
+
+.tbr-body-xl          { font: 400 20px/1.55 var(--tbr-font-sans); letter-spacing: -2px; }
+.tbr-body-xl-medium   { font: 500 20px/1.55 var(--tbr-font-sans); letter-spacing: -2px; }
+.tbr-body-xl-semibold { font: 600 22px/1.5  var(--tbr-font-sans); letter-spacing: -1px; }
+
+/* ===== Card label (uppercase eyebrow) ===== */
+.tbr-card-label {
+  font: 600 12px/1.4 var(--tbr-font-sans);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* ===== Sensible defaults for prose blocks ===== */
+.tbr-prose {
+  max-width: var(--tbr-container-prose);
+  color: var(--tbr-text-primary);
+  font: 400 18px/1.65 var(--tbr-font-serif);
+}
+.tbr-prose h1 { font: 500 58px/1.4 var(--tbr-font-serif); letter-spacing: -2px; margin: 0 0 24px; }
+.tbr-prose h2 { font: 500 42px/1.4 var(--tbr-font-serif); letter-spacing: -1px; margin: 48px 0 16px; }
+.tbr-prose h3 { font: 500 26px/1.4 var(--tbr-font-serif); margin: 32px 0 12px; }
+.tbr-prose p  { margin: 0 0 20px; }
+.tbr-prose a  { color: var(--tbr-accent-highlight); text-decoration: underline; text-underline-offset: 3px; }
+.tbr-prose a:hover { color: var(--tbr-accent-highlight-hover); }
+.tbr-prose blockquote {
+  margin: 32px 0;
+  padding: 8px 0 8px 24px;
+  border-left: 2px solid var(--tbr-accent-highlight);
+  font-style: italic;
+  color: var(--tbr-text-secondary);
+}

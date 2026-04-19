@@ -1,0 +1,46 @@
+{
+  "$description": "4px base spacing scale. Use these for padding, gap, and margins — never ad-hoc values.",
+  "scale": {
+    "0":   "0px",
+    "0.5": "2px",
+    "1":   "4px",
+    "1.5": "6px",
+    "2":   "8px",
+    "3":   "12px",
+    "4":   "16px",
+    "5":   "20px",
+    "6":   "24px",
+    "8":   "32px",
+    "10":  "40px",
+    "12":  "48px",
+    "16":  "64px",
+    "20":  "80px",
+    "24":  "96px",
+    "32":  "128px",
+    "40":  "160px",
+    "48":  "192px"
+  },
+  "layout": {
+    "$description": "Semantic spacing for common layout needs.",
+    "inline-xs": "4px",
+    "inline-sm": "8px",
+    "inline-md": "12px",
+    "inline-lg": "16px",
+    "stack-xs":  "8px",
+    "stack-sm":  "12px",
+    "stack-md":  "16px",
+    "stack-lg":  "24px",
+    "stack-xl":  "32px",
+    "stack-2xl": "48px",
+    "section":   "80px",
+    "section-lg":"128px"
+  },
+  "container": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1200px",
+    "2xl":"1440px",
+    "prose": "680px"
+  }
+}

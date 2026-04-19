@@ -1,0 +1,85 @@
+{
+  "$description": "The Brand Report typography tokens. Editorial serif + functional sans, extracted from Figma.",
+  "families": {
+    "serif": {
+      "name": "Newsreader",
+      "fallback": "'Newsreader', 'Times New Roman', 'Times', Georgia, serif",
+      "use": "Headlines, titles, editorial copy. The voice of the publication."
+    },
+    "sans": {
+      "name": "Inter",
+      "fallback": "'Inter', -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "use": "UI, body copy, labels, metadata, buttons. Everything that isn't editorial."
+    }
+  },
+  "weights": {
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600
+  },
+  "scale": {
+    "title": {
+      "$description": "Newsreader Regular. Section titles and editorial headings — serif voice, lighter weight than header.",
+      "100": { "family": "serif", "size": 20, "lineHeight": 1.3, "letterSpacing": 0,    "weight": 400 },
+      "200": { "family": "serif", "size": 28, "lineHeight": 1.3, "letterSpacing": 0,    "weight": 400 },
+      "300": { "family": "serif", "size": 34, "lineHeight": 1.3, "letterSpacing": 0,    "weight": 400 },
+      "400": { "family": "serif", "size": 40, "lineHeight": 1.3, "letterSpacing": -1,   "weight": 400 },
+      "500": { "family": "serif", "size": 48, "lineHeight": 1.3, "letterSpacing": -1,   "weight": 400 }
+    },
+    "header": {
+      "$description": "Newsreader Medium. Primary headlines and page heroes — biggest serif voice.",
+      "100": { "family": "serif", "size": 26, "lineHeight": 1.4,  "letterSpacing": 0,  "weight": 500 },
+      "200": { "family": "serif", "size": 36, "lineHeight": 1.4,  "letterSpacing": 0,  "weight": 500 },
+      "300": { "family": "serif", "size": 42, "lineHeight": 1.4,  "letterSpacing": -1, "weight": 500 },
+      "400": { "family": "serif", "size": 58, "lineHeight": 1.4,  "letterSpacing": -2, "weight": 500 },
+      "500": { "family": "serif", "size": 70, "lineHeight": 1.4,  "letterSpacing": -2, "weight": 500 }
+    },
+    "header-sans": {
+      "$description": "Inter SemiBold. Functional headings for UI, dashboards, product surfaces.",
+      "100": { "family": "sans", "size": 14, "lineHeight": 1.5,  "letterSpacing": 0,  "weight": 600 },
+      "200": { "family": "sans", "size": 16, "lineHeight": 1.5,  "letterSpacing": 0,  "weight": 600 },
+      "300": { "family": "sans", "size": 18, "lineHeight": 1.6,  "letterSpacing": -1, "weight": 600 },
+      "400": { "family": "sans", "size": 20, "lineHeight": 1.55, "letterSpacing": -1, "weight": 600 },
+      "500": { "family": "sans", "size": 22, "lineHeight": 1.55, "letterSpacing": -2, "weight": 600 }
+    },
+    "body": {
+      "$description": "Inter. Running text, UI labels, metadata. Each size has regular/medium/semibold variants.",
+      "xs": {
+        "regular":  { "family": "sans", "size": 12, "lineHeight": 1.5,  "letterSpacing": 0,  "weight": 400 },
+        "medium":   { "family": "sans", "size": 12, "lineHeight": 1.4,  "letterSpacing": -1, "weight": 500 },
+        "semibold": { "family": "sans", "size": 12, "lineHeight": 1.4,  "letterSpacing": -1, "weight": 600 }
+      },
+      "sm": {
+        "regular":  { "family": "sans", "size": 14, "lineHeight": 1.5,  "letterSpacing": 0,  "weight": 400 },
+        "medium":   { "family": "sans", "size": 14, "lineHeight": 1.4,  "letterSpacing": -1, "weight": 500 },
+        "semibold": { "family": "sans", "size": 14, "lineHeight": 1.4,  "letterSpacing": -1, "weight": 600 }
+      },
+      "md": {
+        "regular":  { "family": "sans", "size": 16, "lineHeight": 1.6,  "letterSpacing": 0,  "weight": 400 },
+        "medium":   { "family": "sans", "size": 16, "lineHeight": 1.6,  "letterSpacing": 0,  "weight": 500 },
+        "semibold": { "family": "sans", "size": 16, "lineHeight": 1.6,  "letterSpacing": 0,  "weight": 600 }
+      },
+      "lg": {
+        "regular":  { "family": "sans", "size": 18, "lineHeight": 1.55, "letterSpacing": 0,  "weight": 400 },
+        "medium":   { "family": "sans", "size": 18, "lineHeight": 1.55, "letterSpacing": 0,  "weight": 500 },
+        "semibold": { "family": "sans", "size": 18, "lineHeight": 1.55, "letterSpacing": 0,  "weight": 600 }
+      },
+      "xl": {
+        "regular":  { "family": "sans", "size": 20, "lineHeight": 1.55, "letterSpacing": -2, "weight": 400 },
+        "medium":   { "family": "sans", "size": 20, "lineHeight": 1.55, "letterSpacing": -2, "weight": 500 },
+        "semibold": { "family": "sans", "size": 22, "lineHeight": 1.5,  "letterSpacing": -1, "weight": 600 }
+      }
+    },
+    "card-label": {
+      "$description": "Uppercase eyebrows and category labels. Inter SemiBold, tracked wide.",
+      "100": {
+        "family": "sans",
+        "size": 12,
+        "lineHeight": 1.4,
+        "letterSpacing": 3,
+        "weight": 600,
+        "textTransform": "uppercase"
+      }
+    }
+  }
+}
