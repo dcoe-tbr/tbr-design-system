@@ -1,6 +1,6 @@
 import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 
-export interface ArticleHeaderProps extends HTMLAttributes<HTMLElement> {
+export interface ArticleHeaderProps extends Omit<HTMLAttributes<HTMLElement>, 'title'> {
   eyebrow?: ReactNode;
   title: ReactNode;
   dek?: ReactNode;

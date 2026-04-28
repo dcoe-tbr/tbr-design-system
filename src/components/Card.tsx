@@ -2,7 +2,7 @@ import { forwardRef, type HTMLAttributes, type ReactNode } from 'react';
 
 type Variant = 'default' | 'editorial' | 'inverted' | 'outlined';
 
-export interface CardProps extends HTMLAttributes<HTMLDivElement> {
+export interface CardProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
   variant?: Variant;
   as?: 'div' | 'article' | 'section';
   eyebrow?: ReactNode;
@@ -61,8 +61,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ variant = 'default', as: Tag = 'div', eyebrow, title, meta, style, children, ...rest }, ref) => {
     return (
       <Tag
-        // @ts-expect-error forwardRef polymorphic
-        ref={ref}
+        ref={ref as React.Ref<HTMLDivElement>}
         style={{ ...containerBase, ...variants[variant], ...style }}
         {...rest}
       >
